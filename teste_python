@@ -1,0 +1,22 @@
+numero = int(input("Digite um número natural maior que 0: "))
+quantidade_de_zeros = 0
+divisores = 0
+
+for x in range (1,numero+1):
+     resto = numero % x
+     if resto ==0:
+        quantidade_de_zeros = quantidade_de_zeros + 1
+        print(x, end=" ")
+print()
+if quantidade_de_zeros == 2:
+
+    print(f"{numero} é primo.")
+elif quantidade_de_zeros == 1:
+     print(f"{numero} não é primo por definição matemática")
+else:
+    print(f"{numero} não é primo por que tem {quantidade_de_zeros} divisores.")
+
+# for x in range (1,5):
+#     divisores = 4%x
+#     if divisores == 0:
+#         print(x)
