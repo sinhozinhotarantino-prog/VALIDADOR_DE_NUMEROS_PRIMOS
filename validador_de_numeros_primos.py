@@ -1,4 +1,5 @@
 numero = int(input("Digite um número natural maior que 0: "))
+
 quantidade_de_zeros = 0
 
 
